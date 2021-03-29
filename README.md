@@ -1,5 +1,3 @@
-If you're looking for a standard operating procedure, check out the [quickstart](docs/quickstart.md).
-
 ## Intro
 This project wraps a python interface around the existing Duet HTTP Interface for controlling Jubilee in python.
 
