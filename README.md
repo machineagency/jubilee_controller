@@ -9,7 +9,7 @@ There are three ways to connect to Jubilee and execute code: (1) locally and (2)
 They look like this:
 
 ### Local Connection (Duet 3 with SBC Only)
-<img src="https://github.com/machineagency/jubilee_python_driver/blob/master/docs/pics/jubilee_duet3_local_connection.png">
+<img src="https://github.com/machineagency/jubilee_controller/blob/main/docs/pics/jubilee_duet3_local_connection.png">
 In this mode, everything runs on the onboard Raspberry Pi, and keyboard and mouse are plugged directly into the Pi.
 
 ### Local Connection through SSH (Duet 3 with SBC Only)
@@ -20,7 +20,7 @@ Internet access is also shared from the PC that's remoting into the Pi through n
 [Linux Internet Sharing Setup](https://www.raspberrypi.org/forums/viewtopic.php?t=10916)
 
 ### Closed Network Connection (Duet 2 or 3)
-<img src="https://github.com/machineagency/jubilee_python_driver/blob/master/docs/pics/jubilee_duet_closed_network_connection.png">
+<img src="https://github.com/machineagency/jubilee_controller/blob/main/docs/pics/jubilee_duet_closed_network_connection.png">
 In this mode, the Python protocol runs on a separate pc with this software package installed.
 It will run as long as it is connected to the PC connected to it.
 
