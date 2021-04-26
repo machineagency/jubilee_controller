@@ -1,25 +1,25 @@
 ## Intro
-This project wraps a python interface around the existing Duet HTTP Interface for controlling Jubilee in python.
+This project wraps a python interface around the existing Duet Software Framework interface for controlling SBC-Duet3-based Jubilees in python.
+
+Note that this python driver only works with Duet 3s in SBC mode, i.e: with an attached Single Board Computer (typically a Raspberry Pi).
 
 ## Connecting to Jubilee
-There are three ways to connect to Jubilee and execute code: (1) locally and (2) with a separate PC over a network connection.
+There are three ways to connect to Jubilee. They look like this:
 
-They look like this:
-
-### Local Connection (Duet 3 with SBC Only)
+### Local Connection
 <img src="https://github.com/machineagency/jubilee_controller/blob/main/docs/pics/jubilee_duet3_local_connection.png">
 In this mode, everything runs on the onboard Raspberry Pi, and keyboard and mouse are plugged directly into the Pi.
 
-### Local Connection through SSH (Duet 3 with SBC Only)
-TODO: image here.
+### Remote Connection through SSH
+<img src="https://github.com/machineagency/jubilee_controller/blob/main/docs/pics/jubilee_duet3_ssh_connection.png">
 
 In this mode, everything runs on the onboard Raspberry Pi, but connection is made to the Pi via a remote SSH session from another PC.
-Internet access is also shared from the PC that's remoting into the Pi through network sharing.
+By defaul, this is a closed network, but Internet access can be from the PC that's remoting into the Pi through network sharing.
 [Linux Internet Sharing Setup](https://www.raspberrypi.org/forums/viewtopic.php?t=10916)
 
-### Closed Network Connection (Duet 2 or 3)
-<img src="https://github.com/machineagency/jubilee_controller/blob/main/docs/pics/jubilee_duet_closed_network_connection.png">
-In this mode, the Python protocol runs on a separate pc with this software package installed.
+### Teleoperated Connection through HTTP
+<img src="https://github.com/machineagency/jubilee_controller/blob/main/docs/pics/jubilee_duet3_http_connection.png">
+In this mode, the Python driver runs on a separate pc that has this software package installed on it.
 It will run as long as it is connected to the PC connected to it.
 
 When running the machine in this mode, note that turning off your PC or losing the network connection will halt the machine mid-execution.

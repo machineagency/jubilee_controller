@@ -219,6 +219,10 @@ class JubileeMotionController(Inpromptu):
         self._move_xyz(x, y, z, wait)
 
 
+    def set_feedrate(self, mm_per_min):
+        self.gcode(f"F{mm_per_min}")
+
+
     @property
     @cli_method
     def position(self):
